@@ -1,0 +1,12 @@
+pipeline:
+  alpine-rss:
+    image: plugins/docker
+    username: visnz
+    password:
+      from_secret: password
+    repo: registry.guediao.top/visnz/alpine-rss
+    registry: registry.guediao.top
+    tags:
+      - latest
+    when:
+      branch: master
