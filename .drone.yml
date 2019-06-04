@@ -3,9 +3,9 @@ pipeline:
     image: plugins/docker
     username: visnz
     password:
-      from_secret: password
-    repo: registry.guediao.top/visnz/alpine-rss
-    registry: registry.guediao.top
+      from_secret: dockerhub
+    repo: hub.docker.com/visnz/alpine-rss
+    registry: hub.docker.com
     tags:
       - latest
     when:
